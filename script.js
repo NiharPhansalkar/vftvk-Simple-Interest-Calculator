@@ -22,7 +22,7 @@ function compute()
     const year = new Date().getFullYear() + parseInt(years);
 
     // Change the innerHTML to show final result
-    finalResult.innerHTML = `<span style="background-color:yellow;">${interest}</span><br>If you deposit <span style="background-color:yellow;">${principal}</span>,<br>
+    finalResult.innerHTML = `<span style="background-color:yellow;">${interest}</span><br><br>If you deposit <span style="background-color:yellow;">${principal}</span>,<br>
                         at an interest rate of <span style="background-color:yellow;">${rate}</span>%.<br>
                         You will receive an amount of <span style="background-color:yellow;">${parseInt(principal) + interest}</span>,<br>
                         in the year <span style="background-color:yellow;">${year}</span>`
