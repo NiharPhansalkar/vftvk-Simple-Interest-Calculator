@@ -6,7 +6,7 @@ function compute()
     const principalElement = document.getElementById("principal");
 
     // Since principal cannot be 0 or negative, check for it.
-    if (principal <= 0)
+    if (principal <= 0 || !principal)
     {
         alert("Please enter a non-zero positive number");
         principalElement.focus();
@@ -22,10 +22,10 @@ function compute()
     const year = new Date().getFullYear() + parseInt(years);
 
     // Change the innerHTML to show final result
-    finalResult.innerHTML = `${interest}<br>If you deposit ${principal},<br>
-                        at an interest rate of ${rate}%.<br>
-                        You will receive an amount of ${parseInt(principal) + interest},<br>
-                        in the year ${year}`
+    finalResult.innerHTML = `<span style="background-color:yellow;">${interest}</span><br>If you deposit <span style="background-color:yellow;">${principal}</span>,<br>
+                        at an interest rate of <span style="background-color:yellow;">${rate}</span>%.<br>
+                        You will receive an amount of <span style="background-color:yellow;">${parseInt(principal) + interest}</span>,<br>
+                        in the year <span style="background-color:yellow;">${year}</span>`
 }
 
 // Function to update values as slider changes

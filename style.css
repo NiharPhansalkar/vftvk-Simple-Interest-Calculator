@@ -11,6 +11,11 @@ h1{
     font-family: verdana;
 }
 
+label {
+    display: inline-block;
+    width: 60px;
+}
+
 .mainDiv {
     background-color: white;
     color: black;
